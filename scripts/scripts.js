@@ -56,9 +56,13 @@ function copyIP(text) {
     elem.select();
     document.execCommand('copy');
     document.body.removeChild(elem);
+
     document.documentElement.scrollTop = 0;
+    document.documentElement.style.overflow = "hidden";
+
     cIP.style.display = "flex";
     setTimeout(() => {
         cIP.style.display = "none";
+        document.documentElement.style.overflow = "auto";
     }, 2000)
 }

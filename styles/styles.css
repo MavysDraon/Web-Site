@@ -65,7 +65,7 @@ nav ul li:hover{
     box-shadow: 0 0 25px #333333;
 
     width: 800px;
-    height: 535px;
+    height: 550px;
     display: inline-block;
 
     /*padding-left: 10px;
@@ -97,7 +97,35 @@ nav ul li:hover{
     align-items: center;
     justify-content: center;
     display: grid;
-    font-size: 25px;
+    font-size: 26px;
+
+    background-color: #ff8177;
+    background-image: linear-gradient(to right, #fff 0%, #AAAAAA 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.boxinfo .lavori:hover{
+    transition: all 10s ease-in-out;
+
+    background-color: #ff8177;
+    background-image: linear-gradient(to right, #fff 0%, #AAAAAA 50%, #555555 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
 }
 
 .boxinfo .generale{
@@ -105,7 +133,44 @@ nav ul li:hover{
     align-items: center;
     justify-content: center;
     display: grid;
-    font-size: 25px;
+    font-size: 26px;
+
+    background-color: #ff8177;
+    background-image: linear-gradient(to right, #fff 0%, #AAAAAA 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+
+}
+
+.boxinfo .generale:hover{
+    transition: all 10s ease-in-out;
+
+    background-color: #ff8177;
+    background-image: linear-gradient(to left, #fff 0%, #AAAAAA 50%, #555555 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.boxinfo .season1{
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+    display: grid;
+    font-size: 28px;
 }
 
 .boxaltro{
@@ -144,12 +209,12 @@ nav ul li:hover{
     text-decoration: none;
     font-size: 3rem;
 
-    width: 250px;
+    /*width: 250px;
     max-width: 100%;
     margin-bottom: 50px;
     animation: pulse 4s infinite;
     animation-timing-function: ease-in-out;
-    height: unset !important;
+    height: unset !important;*/
   }
 
 
@@ -157,12 +222,12 @@ nav ul li:hover{
 .fa-gem {
     margin-right: 0.5rem;
 
-    width: 250px;
+    /*width: 250px;
     max-width: 100%;
     margin-bottom: 50px;
-    animation: pulse 4s infinite;
+    animation: pulse 1s infinite;
     animation-timing-function: ease-in-out;
-    height: unset !important;
+    height: unset !important;*/
 }
 
 #fa__home{

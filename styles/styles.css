@@ -65,13 +65,47 @@ nav ul li:hover{
     box-shadow: 0 0 25px #333333;
 
     width: 800px;
-    height: 500px;
+    height: 535px;
     display: inline-block;
 
     /*padding-left: 10px;
     padding-right: 10px;
     padding-top: 6px;
     padding-bottom: 6px;*/
+}
+
+.boxinfo h2{
+    background-color: #ff8177;
+    background-image: linear-gradient(to top, #00ff00 0%, #55FF55 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 2rem;
+    
+    padding-left: 6px;
+    padding-top: 6px;
+}
+
+.boxinfo .lavori{
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+    display: grid;
+    font-size: 25px;
+}
+
+.boxinfo .generale{
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+    display: grid;
+    font-size: 25px;
 }
 
 .boxaltro{
@@ -92,24 +126,6 @@ nav ul li:hover{
     color: white;
     margin: auto 10px auto 0;
     padding: 0.6px;
-}
-
-.boxinfo h2{
-    background-color: #ff8177;
-    background-image: linear-gradient(to top, #00ff00 0%, #55FF55 100%);
-    background-size: 100%;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-    text-decoration: none;
-    font-size: 2rem;
-    
-    padding-left: 6px;
-    padding-top: 6px;
 }
 
 

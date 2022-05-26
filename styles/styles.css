@@ -207,6 +207,15 @@ nav ul li:hover{
     .logos {
         margin: auto 5px auto 30px;
     }
+    #about-section {
+        width: 411px;
+    }
+    #main-bg {
+        width: 411px;
+    }
+    #topbar {
+        width: 411px;
+    }
 }
 @media (max-width: 375px) {
     #about-section {
@@ -520,6 +529,7 @@ body{
     display: grid;
     background-color: #00ff00;
     float: left;
+    position: ;
 }
 .varie{
     font-size: 30px;

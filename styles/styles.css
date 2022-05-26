@@ -95,7 +95,7 @@ nav ul li:hover{
     padding-top: 6px;
 }
 
-.boxinfo .lavori{
+.boxinfo .lavoro{
     font-weight: bold;
     align-items: center;
     justify-content: center;
@@ -115,7 +115,7 @@ nav ul li:hover{
     text-decoration: none;
 }
 
-.boxinfo .lavori:hover{
+.boxinfo .lavoro:hover{
     transition: all 10s ease-in-out;
 
     background-color: #ff8177;

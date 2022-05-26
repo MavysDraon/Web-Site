@@ -216,6 +216,19 @@ nav ul li:hover{
     #topbar {
         width: 411px;
     }
+    #varie {
+        right: 67px;
+        position: fixed;
+    }
+    #myBtn {
+        display: grid;
+        position: sticky;
+        /* bottom: 20px;
+        right: 30px; */
+        bottom: 100px;
+        right: 100px;
+        background: #00ff00;
+      }
 }
 @media (max-width: 375px) {
     #about-section {
@@ -529,14 +542,14 @@ body{
     display: grid;
     background-color: #00ff00;
     float: left;
-    position: ;
+    position: sticky;
 }
 .varie{
     font-size: 30px;
     display: grid;
     cursor: pointer;
     left: 305px;
-    position: fixed;
+    position: sticky;
 }
 
 #myBtn {

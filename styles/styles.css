@@ -208,6 +208,25 @@ nav ul li:hover{
         margin: auto 5px auto 30px;
     }
 }
+@media only screen and (max-width: 375px) {
+    .about-section {
+        width: 410.5px;
+    }
+    .section {
+        width: 411px;
+    }
+    .main-bg {
+        width: 1000px;
+    }
+    header .topbar {
+        width: 10px;
+        display: grid;
+        position: fixed;
+        display: none;
+        margin: 1000px;
+        padding: 100px;
+    }
+}
 
 
 .text{

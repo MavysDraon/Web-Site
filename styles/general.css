@@ -20,13 +20,13 @@
 ::-webkit-scrollbar-track {
   background: #111216;
   /*border-radius: 50px;*/
-}
+} 
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
   border: red 4px ;
   background: linear-gradient(#111216, #FFAB00, #111216);
-  border-radius: 50px;
+  border-radius: 50px; 
 }
 
 /* Handle on hover */

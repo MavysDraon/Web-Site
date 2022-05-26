@@ -4,6 +4,8 @@ const menuPages = document.getElementById("menu-pages");
 const container = document.getElementById("container");
 const progress = document.getElementById("progress")
 
+const variePages = document.getElementById("varie-pages")
+
 const buttonClickEvent = () => {
     if (button.getAttribute("status") == "close") {
         button.setAttribute("status", "open");
@@ -22,6 +24,21 @@ const buttonClickEvent = () => {
         topbar.style.height = "8.7vh";
         topbar.style.alignItems = "center";
         menuPages.style.display = "none";
+    }
+}
+
+const buttonClickEvents = () => {
+    if (button.getAttribute("status") == "close") {
+        button.setAttribute("status", "open");
+
+        variePages.style.display = "flex";
+    } else {
+        button.setAttribute("status", "close");
+        setInterval(() => {
+            topbar.clientHeight -= 10;
+        }, 500);
+
+        variePages.style.display = "none";
     }
 }
 

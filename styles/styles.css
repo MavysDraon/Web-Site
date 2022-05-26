@@ -10,6 +10,9 @@
 
     --ombra: 0px 0px 20px 0px rgba(0,0,0,0,4);
     --ombraLight: 0px 0px 20px 0px rgba(255,255,255,255,4);
+
+    --main-background: #11111d;
+
 }
 
 #noSottolineato{
@@ -185,6 +188,27 @@ nav ul li:hover{
     height: 500px;
     display: inline-block;
 }
+
+@media (max-width: 425px) {
+    .boxinfo {
+        width: 300px;
+        height: 800px;
+    }
+    .staff-section {
+        width: 411px;
+    }
+    .footer {
+        width: 100%;
+        height: 270px;
+    }
+    .copyright {
+        display: none;
+    }
+    .logos {
+        margin: auto 5px auto 30px;
+    }
+}
+
 
 .text{
     font-size: 20px;
@@ -434,3 +458,86 @@ body{
 }*/
 
 /* Skin Staff */
+
+/* Dev */
+
+#preloader {
+    position: fixed !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999;
+    overflow: hidden;
+    background: var(--main-background);
+    animation: hideLoader 0s ease-in 1s;
+    animation-fill-mode: forwards;
+  }
+  #preloader:before {
+    content: "";
+    position: fixed !important;
+    background: url(/assets/spinner.svg);
+    background-size: cover;
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+    animation: animate-preloader 1s linear infinite hideLoader 0s ease-in 1s;
+    animation-fill-mode: forwards;
+  }
+  @keyframes hideLoader {
+    to {
+      visibility: hidden;
+      width: 0;
+      height: 0;
+    }
+  }
+
+
+.menu:hover{
+        /*width: 250px;*/
+        /* max-width: 100%; 
+        margin-bottom: 50px;*/
+        animation: pulse 2s infinite;
+        animation-timing-function: ease-in-out;
+        /* height: unset !important; */
+}
+
+#varie-pages{
+    display: grid;
+    background-color: #00ff00;
+    float: left;
+}
+.varie{
+    font-size: 30px;
+    display: grid;
+    cursor: pointer;
+    left: 305px;
+    position: fixed;
+}
+
+#myBtn {
+    /* display: none; */
+    position: fixed;
+    /* bottom: 20px;
+    right: 30px; */
+    bottom: 508px;
+    left: 240px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: #222222;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+    width: 150px;
+  }
+  
+  #myBtn:hover {
+    background-color: #555;
+    transition: 0.6s;
+  }

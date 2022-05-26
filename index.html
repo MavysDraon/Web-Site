@@ -6,6 +6,13 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 
+        <meta property="og:title" content="ButterMc">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="/">
+        <meta property="og:image" content="https://cdn.resourcemc.net/zAsa7/rIBOyeRU58.png/raw">
+        <meta property="og:description" content="Novità e aggiornamenti di ButterMc">
+        <meta name="theme-color" content="#0967d3">
+
         <meta name="copyrighted-site-verification" content="100b2bf8d66b4cd8" />
         <meta name='dmca-site-verification' content='bEhFSmRxamFPU3JqU0FnUS96bGt6dz090' />
 
@@ -16,6 +23,11 @@
 
         <script src="https://cdn.jsdelivr.net/gh/leonardosnt/mc-player-counter/dist/mc-player-counter.min.js"></script>
         <script src="https://kit.fontawesome.com/40e671f335.js" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" type="bddf3e7ec40506c305d1a4e5-text/javascript"></script>
+        <script src="/themes/carbon/js/buttons.js " type="bddf3e7ec40506c305d1a4e5-text/javascript"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous" type="bddf3e7ec40506c305d1a4e5-text/javascript"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous" type="bddf3e7ec40506c305d1a4e5-text/javascript"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous" type="bddf3e7ec40506c305d1a4e5-text/javascript"></script>
 
         <link rel="stylesheet" href="/styles/styles.css">
         <link rel="stylesheet" href="/styles/general.css">
@@ -27,7 +39,12 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css" integrity="sha384-/frq1SRXYH/bSyou/HUp/hib7RVN1TawQYja658FEOodR/FQBKVqT9Ol+Oz3Olq5" crossorigin="anonymous">
+
+        <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"> -->
+        
         <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
 
         <!-- CSS only -->
         <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">-->
@@ -55,14 +72,94 @@
                     <div class="menu" id="menu" status="close" onclick="buttonClickEvent()">
                         <i class="fa-solid fa-bars"></i>
                     </div>
+
+                    <div class="varie" id="varie" status="close" onclick="buttonClickEvents()">
+                        <i class="fa-solid fa-chart-bar"></i>
+                    </div>
+
+                    <ul id="varie-pages" class="varie-pages">
+                        <!-- <a href="/" id="fperson"><i class="fas fa-person"></i><li class="top"><a href="#staff" class="lis">Top</a></li> -->
+                        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+                    </ul>
+
                 </div>
                 <div class="center">
                     <ul class="pages">
-                        <a href="#" id="fa__home"><i class="fas fa-home"></i><li class="home"><a href="#">HOME</a></li>
-                        <a href="/" id="fa__person"><i class="fas fa-person"></i><li class="staff"><a href="#staff">STAFF</a></li>
+                        <a href="#" id="fa__home"><i class="fas fa-home"></i><li class="home"><a class="save-btn" href="#">HOME</a></li>
+                        <a href="" id="fa__person"><i class="fas fa-person"></i><li class="staff"><a class="save-btns" href="">STAFF</a></li>
                         <a href="/" id="fa__arrow_up"><i class="fa-solid fa-arrow-up"></i><li class="season"><a href="#season">SEASON</a></li>
                         <a href="/" id="fa__check_to_slot"><i class="fa-solid fa-check-to-slot"></i><li class="vota"><a target="__blank" href="">VOTACI</a></li>
                         <a href="/" id="fa__map"><i class="fas fa-map"></i><li class="mappaonline"><a target="__blank" href="#">MAPPA</a></li>
+
+                        <style>
+                            /* .save-btn{
+                                font-size: 22px;
+                                color: #fff;
+                                background: #29ca8e;
+                                width: 250px;
+                                height: 60px;
+                                cursor: pointer;
+                                border-radius: 3px;
+                                box-shadow: 0 8px 5px -5px rgba(0, 0, 0, 0.2);
+                                display: grid;
+                                place-content: center;
+                                transition: 0.2s;
+                            } */
+                            .loader{
+                                pointer-events: none;
+                                width: 30px;
+                                height: 30px;
+                                border-radius: 50%;
+                                border: 3px solid transparent;
+                                border-top-color: #fff;
+                                animation: an1 1s ease infinite;
+                                place-content: center;
+                                bottom: 100px;
+                                display: grid;
+                                align-items: center;
+                                justify-content: center;
+                            }
+
+                            /* .main-bg, .about-section, .staff-section{
+                                display: none;
+                            } */
+
+                            @keyframes an1 {
+                                0% {
+                                    transform: rotate(0turn);
+                                }
+                                100% {
+                                    transform: rotate(1turn);
+                                }
+                            }
+                    
+                        </style>
+    
+
+                <!-- <script>
+                    save_btn = document.querySelector(".save-btn");
+                    
+                    save_btn.onclick = function() {
+                        this.innerHTML = "<div class='loader'></div>";
+                           setTimeout(() => {
+                               this.innerHTML = "Changes Saved";
+                               this.style = "background: #f1f5f4; color: #333; pointer-events: none";
+                           }, 2000);
+                    };
+
+
+
+                    save_btn = document.querySelector(".save-btns");
+
+                    save_btn.onclick = function() {
+                        this.innerHTML = "<a class='save-btns' href='https://www.youtube.com/'>STAFF</a>";
+                           setTimeout(() => {
+                               this.innerHTML = "Tp";
+                               this.style = "background: #f1f5f4; color: #333; pointer-events: none";
+                           }, 2000);
+                    };
+                </script> -->
+
 
                         <!--<div class="search-box">
                             <input type="text" placeholder="Search Here..."
@@ -96,6 +193,8 @@
             </div>
         </header>
 
+        <div id="preloader"></div>
+
         <!--<div class="seek_themechanger">
             <i class="fas fa-adjust"></i>-->
 
@@ -104,7 +203,11 @@
         </div>
 
         <div class="main-bg">
-            <img class="logo" src="./assets/logo.png" alt="">
+            <img class="logo" src="./assets/logo-v2.png" alt="">
+            <!-- <div class="logos">
+                <h1 class="lbutter">Butter</h1>
+                <h1 class="lbutter">Mc</h1>
+            </div> -->
             <div class="txt-box">
                 <p class="title">BUTTERMC</p>
                 <br>
@@ -123,18 +226,133 @@
     
             <div class="section">
                 <img class="a-left" src="./assets/img.png" alt="img">
-                <p class="text a-right">Questa vanilla è nato a il 29 dicembre 2021, ci sono state 2 parti, la prima parte in cui la versione era 1.17 ed è durata fino a febbraio!</p>
+                <p class="text a-right">Questa vanilla è nato a il 29 dicembre 2021, ci sono 3 parti, la prima parte la versione era 1.17 ed è durata fino a febbraio!</p>
             </div>
     
             <div class="section">
-                <p class="text a-left">La seconda parte e iniziata a marzo e la versione era 1.18 all' inizio era difficile ma dopo molti sforzi e diventato il tutto più facile!</p>
+                <p class="text a-left">La seconda parte e iniziata a marzo e la versione era 1.18 all' inizio era difficile ma dopo molti sforzi e diventato tutto più facile!</p>
                 <img class="a-right" src="./assets/img1.png" alt="img1">
             </div>
 
             <div class="section">
                 <img class="a-left" src="./assets/img2.png" alt="img2">
-                <p class="text a-right">Nel team siamo in 3 ognuno ha deciso dei lavori da fare: il primo Builder,il secondo Farmer, il terzo Miner. Per gli altri lavori bisogna aspettare che il sindaco da il permesso!</p>
+                <p class="text a-right">Nel team siamo in 3 ognuno ha deciso dei lavori. Per gli altri lavori bisogna aspettare che il sindaco da il permesso!</p>
             </div>
+
+            <div class="lavori">
+                <h1 class="heart-icon">Lavori</h1>
+                <div class="works">
+                    <p class="work">1 -> Builder</p>
+                    <p class="work">2 -> Farmer</p>
+                    <p class="work">3 -> Miner</p>
+                </div>
+                
+
+            </div>
+
+            <style>
+                .work{
+                    display: flex;
+                    align-items: center;
+                    column-gap: 2px;
+                    
+                }
+                .works{
+                    /* display: flex; */
+                    gap: 10px;
+                    background-color: #5f49ec;
+                    padding: 5px;
+                    border-radius: 5px;
+                    margin-top: 5px;
+                    position: relative;
+                    opacity: 0;
+                    transform: scale(0);
+                    transform-origin: top;
+                    transition: transform .5s
+                    linear,
+                    opacity .5s;
+
+                    font-size: 18px;
+                    font-weight: 555;
+                }
+                .works::before{
+                    content: '';
+                    position: absolute;
+                    inset: -3px auto auto 50%;
+                    transform: translateX(-50%)
+                    rotate(45deg);
+                    width: 10px;
+                    height: 10px;
+                    background-color: inherit;
+                    border-radius: 2px;
+                    z-index: -1;
+                }
+                .lavori:hover
+                .heart.icon::after,
+                .lavori:hover
+                .works{
+                    opacity: 1;
+                    transform: scale(1);
+                }
+                h1{
+                    font-size: 35px;
+                }
+                h1:hover{
+                    background-image: linear-gradient(to left, #ff0844 0%, #ffb199 100%);
+                    -webkit-background-clip: text;
+                    -moz-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    -moz-text-fill-color: transparent;
+                }
+                .heart.icon{
+                    font-size: 26px;
+                    position: relative;
+                }
+                .heart.icon::after{
+                    content: '';
+                    position: absolute;
+                    inset: 0 0 auto auto;
+                    width: 5px;
+                    height: 5px;
+                    background-color: #5f49ec;
+                    border: 2px solid #151515;
+                    border-radius: 50%;
+                    opacity: 0;
+                    transform: scale(0);
+                    transition: transform .5s
+                    linear
+                    opacity .5s;
+                }
+                .lavori{
+                    width: fit-content;
+                    text-align: center;
+                }
+            </style>
+
+
+    
+            <!-- <script>
+                save_btn = document.querySelector(".enable");
+                
+                save_btn.onclick = function() {
+                    this.innerHTML = "<div class='work'><p>1-> Builder</p><p>2-> Farmer</p><p>3-> Miner</p></div>";
+                        this.style = "border: none;background: none;font-size: 30px;max-width: 100%;margin-bottom: 50px;animation: pulse 4s infinite;animation-timing-function: ease-in-out;height: unset !important";
+                    // setTimeout(() => {
+                    //     this.style = "";
+                    // }, 2000);
+                }
+
+                lavori_1 = document.querySelector(".disable");
+                
+                lavori_1.onclick = function() {
+                    this.innerHTML = "<div class='work'><p>1-> Builder</p><p>2-> Farmer</p><p>3-> Miner</p></div>";
+                        this.style = "visibility: hidden";
+                    // setTimeout(() => {
+                    //     this.style = "";
+                    // }, 2000);
+                }
+            </script> -->
+
         </div>
     
         <div class="staff-section">
@@ -216,18 +434,7 @@ Season |
             </p>
         </div>-->
 
-        <br>
-
-        <div class="staff-section">
-            <div class="divisor">
-                <hr class="line">
-                <p id="staff" class="title">STAFF</p>
-                <hr class="line">
-            </div>
-
-
-
-            <style>
+<style>
                 @keyframes pulse {
     0% {
         transform: scale(1);
@@ -252,6 +459,15 @@ Season |
     height: unset !important;
 }
             </style>
+
+        <br>
+
+        <div class="staff-section">
+            <div class="divisor">
+                <hr class="line">
+                <p id="staff" class="title">STAFF</p>
+                <hr class="line">
+            </div>
 
             <!-- OWNER -->
             <!--<br>
@@ -446,6 +662,10 @@ Season |
     background-color: #efefef;
 }
 
+:root{
+    --main-color: #eb4334;
+}
+
 @keyframes rainbow {
     0% {
         background: var(--main-color);
@@ -519,6 +739,69 @@ Season |
                 </div>
             </div>
         </footer>
+
+        <!-- <a href="#" id="tg-scroll-to-top" class="tg-scroll-to-top">
+			<i class="fa fa-chevron-up">
+				<span class="screen-reader-text">Torna su</span>
+			</i>
+		</a> -->
+
+        <script>
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            })
+        </script>
+
+
+<!-- <style>
+    #myBtn {
+      /* display: none; */
+      position: fixed;
+      bottom: 20px;
+      right: 30px;
+      z-index: 99;
+      font-size: 18px;
+      border: none;
+      outline: none;
+      background-color: red;
+      color: white;
+      cursor: pointer;
+      padding: 15px;
+      border-radius: 4px;
+    }
+    
+    #myBtn:hover {
+      background-color: #555;
+    }
+    </style> -->
+
+
+<!-- <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button> -->
+
+
+<script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
 
         <script src="./scripts/scripts.js"></script>
         <script async src="https://arc.io/widget.js"></script>

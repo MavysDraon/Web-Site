@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+            <ul>
+
+                </ul>
+        </li>
+        <li><a href="#">Menu</a>
+            <ul>
+        
+        
+
+            <li><a href="#">Dischi</a></li>
+                <li><a href="#">Spartiti</a></li>
+                </ul>
+            </li>
+        </nav>
+    </header>
+
+    <style>
+        body{font-family: sans-serif;}
+
+        nav{background: #000; height: 52px; width: 100%; position: fixed; top: 0; left: 0;}
+
+        nav ul{list-style: none; margin: 0 auto; padding: 0; width: 100%; height: 1200px;}
+
+        nav ul ul{display: none; position: absolute; top: 100%; left: 0; width: 100%;}
+
+        nav ul li{position: relative; float: left; width: 20%; align-items: center;}
+
+        nav ul li:hover ul{display: block;}
+
+        nav ul li li{position: relative; float: none; width: 100%; border: none;}
+
+        nav ul li a{ display: block; text-decoration: none; color: #ffffff; padding: 15px 25px; font-size: 1.2em; box-sizing: border-box;
+        border-right: solid 2px #000; border-left: solid 2px #000;}
+
+        nav ul ul li a{font-size: 1rem; border-bottom: solid 2px #000;}
+
+        nav ul ul li:first-child a{border-top: solid 2px #000;}
+
+        nav ul li:hover a{background: #fff; color: #000; text-decoration: none; transition: 0.5s;}
+
+        nav ul li li:hover{background: #000; color: #fff;}
+    </style>
+
+</body>
+</html>

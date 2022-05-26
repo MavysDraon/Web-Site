@@ -1,0 +1,120 @@
+<!-- <!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="loader">
+        <div class="ball"></div>
+        <div class="ball"></div>
+        <div class="ball"></div>
+        <span>Loading...</span>
+    </div>
+
+
+    <style>
+        *{
+            background: blue;
+        }
+        .loader{
+            width: 120px;
+            height: 75px;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: flex-end;
+            justify-content: space-between;
+        }
+        .loader span{
+            font-size: 22px;
+            text-transform: uppercase;
+            margin: auto;
+        }
+        .ball{
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            background-color: #fff;
+            animation: bounce .5s alternate
+            infinite;
+        }
+        .ball:nth-child(2) {
+            animation-delay: .16s;
+        }
+        .ball:nth-child(3) {
+            animation-delay: .32s;
+        }
+        @keyframes bounce {
+            from {
+                transform: scaleX(1.25);
+            }
+            to{
+                transform: 
+                translateY(-50px) scale(1);
+            }
+        }
+    </style>
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <style>
+        *{
+            margin: 0;
+            font-family: sans-serif;
+        }
+        .page-loader{
+            width: 100vw;
+            height: 100vh;
+            background: #4070f4;
+            position: absolute;
+            top: 0%;
+            left: 0;
+            display: grid;
+            place-content: center;
+            place-items: center;
+        }
+        .text{
+            margin-top: 30px;
+            font-size: 30px;
+            color: #fff;
+            letter-spacing: 1px;
+        }
+        .spinner{
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            background: transparent;
+            border: 10px solid rgba(255, 255, 255, 0.1);
+            border-top-color: #fff;
+            animation: spin 0.7s linear infinite;
+        }
+        @keyframes spin {
+            0% {
+                transform: rotate(0turn);
+            }
+            100% {
+                transform: rotate(1turn);
+            }
+        }
+    </style>
+
+
+    <div class="page-loader">
+        <div class="spinner"></div>
+        <h2 class="text">Please Wait</h2>
+    </div>
+</body>
+</html> -->

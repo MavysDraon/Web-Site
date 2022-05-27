@@ -73,14 +73,13 @@
                         <i class="fa-solid fa-bars"></i>
                     </div>
 
-                    <div class="varie" id="varie" status="close" onclick="buttonClickEvents()">
+                    <!-- <div class="varie" id="varie" status="close" onclick="buttonClickEvents()">
                         <i class="fa-solid fa-chart-bar"></i>
-                    </div>
+                    </div> -->
 
-                    <ul id="varie-pages" class="varie-pages">
-                        <!-- <a href="/" id="fperson"><i class="fas fa-person"></i><li class="top"><a href="#staff" class="lis">Top</a></li> -->
-                        <button onclick="topFunction()" id="myBtn" class="myBtn" title="Go to top">Top</button>
-                    </ul>
+                    <!-- <ul id="varie-pages" class="varie-pages">
+                        <a href="/" id="fperson"><i class="fas fa-person"></i><li class="top"><a href="#staff" class="lis">Top</a></li>
+                    </ul> -->
 
                 </div>
                 <div class="center">
@@ -208,6 +207,11 @@
                 <h1 class="lbutter">Butter</h1>
                 <h1 class="lbutter">Mc</h1>
             </div> -->
+
+            
+
+            
+
             <div class="txt-box">
                 <p class="title">BUTTERMC</p>
                 <br>
@@ -217,11 +221,23 @@
             </div>
         </div>
 
+        
+
         <div class="about-section" id="about-section">
             <div class="divisor">
                 <hr class="line">
                 <p class="title" id="about">ABOUT</p>
                 <hr class="line">
+            </div>
+
+<div class="announce">
+                <div class="bar">
+                    <i class="fas fa-bullhorn"></i>
+                    <span class="text">Benvenuto nel sito ufficiale di ButterMc!</span>
+                    <div class="button">
+                        <a href="http://discord.buttermc.it">Discord</a> 								</div>
+                    <div id="particles-js"><canvas class="particles-js-canvas-el" width="494" height="70" style="width: 100%; height: 100%;"></canvasl></div>
+                </div>
             </div>
     
             <div class="section">
@@ -355,7 +371,7 @@
 
         </div>
     
-        <div class="staff-section">
+        <div class="staff-section" id="staff-section">
             <div class="divisor">
                 <hr class="line">
                 <p id="season" class="title">SEASON</p>
@@ -605,7 +621,9 @@ Season |
             
         </div>
 
-        <div class="announce">
+        <!-- Announce Bar -->
+
+        <!-- <div class="announce">
             <div class="bar">
                 <i class="fas fa-bullhorn"></i>
                 <span class="text">Benvenuto nel sito ufficiale di ButterMc!</span>
@@ -613,7 +631,7 @@ Season |
                     <a href="http://discord.buttermc.it">Discord</a> 								</div>
                 <div id="particles-js"><canvas class="particles-js-canvas-el" width="494" height="70" style="width: 100%; height: 100%;"></canvasl></div>
             </div>
-        </div>
+        </div> -->
 
         <style>
 .announce .bar {
@@ -688,7 +706,7 @@ Season |
     }
 
     100% {
-        background: var(--mai-color);
+        background: var(--main-color);
     }
 }
 .announce .bar .text p {
@@ -731,7 +749,7 @@ Season |
     
             <div class="bottom">
                 <div class="socials">
-                    <a target="_blink" href="404.html"><i class="fa-brands fa-discord"></i></a>
+                    <a target="_blink" href=""><i class="fa-brands fa-discord"></i></a>
                 </div>
                 <div class="copyright">
                     <a class="copyrighted-badge" title="Copyrighted.com Registered &amp; Protected" target="_blank" href="https://www.copyrighted.com/website/XTvO2VYDCweufJO3"><img alt="Copyrighted.com Registered &amp; Protected" border="0" width="125" height="25" srcset="https://static.copyrighted.com/badges/125x25/05_1_2x.png 2x" src="https://static.copyrighted.com/badges/125x25/05_1.png" /></a><script src="https://static.copyrighted.com/badges/helper.js"></script>
@@ -746,64 +764,61 @@ Season |
 			</i>
 		</a> -->
 
-        <script>
+        <!-- <script>
             window.scrollTo({
                 top: 0,
                 behavior: "smooth"
             })
+        </script> -->
+
+        <a href="#" class="to-top">
+            <i class="fas fa-chevron-up"></i>
+        </a>
+    
+        <style>
+            .fa-chevron-up{
+                color: #1f1f1f;
+            }
+            html{
+                scroll-behavior: smooth;
+            }
+            .to-top{
+                background: white;
+                position: fixed;
+                bottom: 16px;
+                right: 32px;
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 32px;
+                color: #1f1f1f;
+                text-decoration: none;
+                opacity: 0;
+                pointer-events: none;
+                transition: all .4s;
+            }
+            .to-top.active{
+                bottom: 32px;
+                pointer-events: auto;
+                opacity: 1;
+            }
+        </style>
+        <script>
+            const toTop = document.querySelector(".to-top");
+    
+            window.addEventListener("scroll", () => {
+                if (window.pageYOffset > 100) {
+                    toTop.classList.add("active");
+                } else {
+                    toTop.classList.remove("active");
+                }
+            })
         </script>
 
 
-<!-- <style>
-    #myBtn {
-      /* display: none; */
-      position: fixed;
-      bottom: 20px;
-      right: 30px;
-      z-index: 99;
-      font-size: 18px;
-      border: none;
-      outline: none;
-      background-color: red;
-      color: white;
-      cursor: pointer;
-      padding: 15px;
-      border-radius: 4px;
-    }
-    
-    #myBtn:hover {
-      background-color: #555;
-    }
-    </style> -->
-
-
-<!-- <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button> -->
-
-
-<script>
-//Get the button
-var mybutton = document.getElementById("myBtn");
-
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = "block";
-  } else {
-    mybutton.style.display = "none";
-  }
-}
-
-// When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-}
-</script>
-
-
         <script src="./scripts/scripts.js"></script>
-        <script async src="https://arc.io/widget.js"></script>
     </body>
 </html>

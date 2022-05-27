@@ -227,8 +227,32 @@ nav ul li:hover{
         /* bottom: 20px;
         right: 30px; */
         /*bottom: 100px;
-        right: 100px;
-        background: #00ff00; */
+        right: 100px;*/
+        display: none;
+      }
+
+    
+    .about-section {
+        width: 411px;
+    }
+    .main-bg {
+        width: 411px;
+    }
+    .topbar {
+        width: 411px;
+    }
+    .varie {
+        /* right: 67px;
+        position: fixed; */
+        display: none;
+    }
+    .myBtn {
+        /* display: grid;
+        position: sticky;
+        /* bottom: 20px;
+        right: 30px; */
+        /*bottom: 100px;
+        right: 100px;*/
         display: none;
       }
 }

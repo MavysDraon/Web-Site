@@ -197,7 +197,7 @@ nav ul li:hover{
         height: 800px;
     }
     .season-section {
-        width: 401px;
+        width: 395px;
     }
     .footer {
         width: 100%;
@@ -210,54 +210,30 @@ nav ul li:hover{
         margin: auto 5px auto 30px;
     }
     #about-section {
-        width: 401px;
+        width: 395px;
     }
     #main-bg {
-        width: 401px;
+        width: 395px;
     }
     #topbar {
-        width: 401px;
-    }
-    #varie {
-        right: 100px;
-        position: fixed;
-    }
-    #myBtn {
-        display: grid;
-        position: sticky;
-        /* bottom: 20px;
-        right: 30px; */
-        bottom: 100px;
-        right: 100px;
+        width: 395px;
     }
     #staff-section {
-        width: 401px;
+        width: 395px;
     }
 
     
     .about-section {
-        width: 401px;
+        width: 395px;
     }
     .main-bg {
-        width: 401px;
+        width: 395px;
     }
     .topbar {
-        width: 401px;
-    }
-    .varie {
-        right: 100px;
-        position: fixed;
-    }
-    .myBtn {
-        display: grid;
-        position: sticky;
-        /* bottom: 20px;
-        right: 30px; */
-        bottom: 100px;
-        right: 100px;
+        width: 395px;
     }
     .staff-section {
-        width: 401px;
+        width: 395px;
     }
 }
 @media (max-width: 375px) {
